@@ -29,8 +29,8 @@ class WIMInference:
     ) -> None:
         self.model = model
         self.tokenizer = tokenizer
-        self.wim_kv_cache = DynamicCache()
-        self.classifier_kv_cache = DynamicCache()
+        self.wim_kv_cache = DynamicCache() #cache 1
+        self.classifier_kv_cache = DynamicCache() #cache 2
 
     def _prefill_tokens(
         self,

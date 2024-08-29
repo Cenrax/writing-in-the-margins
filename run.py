@@ -120,6 +120,8 @@ def main(
         "{generation_header}": generation_header,
         "{query}": example["query"],
     }
+    
+    print(special_tokens)
 
     # Apply special tokens specific to the chosen model
     prompt_extractive_summary = apply_special_tokens(
